@@ -10,6 +10,7 @@ $screen-sm: 576px;
 $screen-xs-max: calc($screen-sm - 1px);
 
 $noe-black: #000000;
+$noe-white: #ffffff;
 
 $font-primary: Arial, sans-serif;
 $font-secondary: "Frutiger Next LT", Arial, sans-serif;
@@ -18,10 +19,12 @@ $font-sm-mobile: 14px;
 $font-sm-desktop: 14px;
 $font-md-mobile: 16px;
 $font-md-desktop: 18px;
-$font-lg-mobile: 24px;
+$font-lg-mobile: 20px;
 $font-lg-desktop: 28px;
 $font-xl-mobile: 32px;
 $font-xl-desktop: 56px;
+
+$border-radius: 12px;
 
 // override bootstrap spacer variable
 $spacer: 1rem !default;

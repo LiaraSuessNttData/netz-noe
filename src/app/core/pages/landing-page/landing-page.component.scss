@@ -1,0 +1,19 @@
+@import "abstracts/variables";
+
+.cover {
+  &__img {
+    width: 100%;
+    border-radius: $border-radius;
+  }
+}
+
+.availability {
+  &__box {
+    margin-top: -80px;
+    z-index: 100;
+    background-color: $noe-black;
+    border-radius: $border-radius;
+
+    color: $noe-white;
+  }
+}
