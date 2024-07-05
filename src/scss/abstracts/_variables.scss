@@ -1,2 +1,46 @@
+$screen-xxl: 1440px;
+$screen-xl-max: calc($screen-xxl - 1px);
+$screen-xl: 1200px;
+$screen-lg-max: calc($screen-xl - 1px);
+$screen-lg: 992px;
+$screen-md-max: calc($screen-lg - 1px);
+$screen-md: 768px;
+$screen-sm-max: calc($screen-md - 1px);
+$screen-sm: 576px;
+$screen-xs-max: calc($screen-sm - 1px);
+
+$noe-black: #000000;
+
 $font-primary: Arial, sans-serif;
 $font-secondary: "Frutiger Next LT", Arial, sans-serif;
+
+$font-sm-mobile: 14px;
+$font-sm-desktop: 14px;
+$font-md-mobile: 16px;
+$font-md-desktop: 18px;
+$font-lg-mobile: 24px;
+$font-lg-desktop: 28px;
+$font-xl-mobile: 32px;
+$font-xl-desktop: 56px;
+
+// override bootstrap spacer variable
+$spacer: 1rem !default;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+// prettier-ignore
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),    //4px
+    2: ($spacer * .5),     //8px
+    3: $spacer,            //16px
+    4: ($spacer * 1.5),    //24px
+    5: ($spacer * 3),      //48px
+    6: ($spacer * 4),      //64px
+    7: ($spacer * 5),      //80px
+    8: ($spacer * 6.25),   //100px
+    9: ($spacer * 7.5),    //120px
+    10: ($spacer * 9.375)  //150px
+  ),
+  $spacers
+);

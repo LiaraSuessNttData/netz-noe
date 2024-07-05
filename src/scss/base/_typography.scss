@@ -97,7 +97,10 @@
 
 * {
   font-family: $font-secondary;
-  // font-size: $font-md;
+  font-size: $font-md-mobile;
+  @media screen and (min-width: $screen-md) {
+    font-size: $font-md-desktop;
+  }
 }
 
 h1,
@@ -113,15 +116,9 @@ h5,
 h6,
 .h6 {
   font-family: $font-primary;
-  // font-size: $font-xxl;
-  // text-transform: uppercase;
-  // line-height: 0.82;
 }
 
-// .link {
-//   color: $litit-black;
-//   font-size: $font-sm;
-//   font-weight: 800;
-//   text-transform: uppercase;
-//   text-decoration: none;
-// }
+.link {
+  color: $noe-black;
+  text-decoration: none;
+}

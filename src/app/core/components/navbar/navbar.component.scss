@@ -1,0 +1,15 @@
+@import "abstracts/variables";
+
+.company-logo {
+  height: 48px;
+}
+
+.nav-list {
+  &__btn-burger {
+    text-decoration: none;
+
+  }
+  &__btn-icon {
+    font-size: $font-lg-mobile;
+  }
+}
