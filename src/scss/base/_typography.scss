@@ -1,0 +1,127 @@
+@import "abstracts/variables";
+
+@font-face {
+  font-family: "Frutiger Next LT";
+  src: url("../../assets/fonts/FrutigerNextLT/FrutigerNextLT-Light.ttf")
+    format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Frutiger Next LT";
+  src: url("../../assets/fonts/FrutigerNextLT/FrutigerNextLT-LightItalic.ttf")
+    format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Frutiger Next LT";
+  src: url("../../assets/fonts/FrutigerNextLT/FrutigerNextLT-Regular.ttf")
+    format("truetype");
+  font-weight: 250;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Frutiger Next LT";
+  src: url("../../assets/fonts/FrutigerNextLT/FrutigerNextLT-RegularItalic.ttf")
+    format("truetype");
+  font-weight: 250;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Frutiger Next LT";
+  src: url("../../assets/fonts/FrutigerNextLT/FrutigerNextLT-Medium.ttf")
+    format("truetype");
+  font-weight: normal; //400
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Frutiger Next LT";
+  src: url("../../assets/fonts/FrutigerNextLT/FrutigerNextLT-MediumItalic.ttf")
+    format("truetype");
+  font-weight: normal; //400
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Frutiger Next LT";
+  src: url("../../assets/fonts/FrutigerNextLT/FrutigerNextLT-Bold.ttf")
+    format("truetype");
+  font-weight: bold; //700
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Frutiger Next LT";
+  src: url("../../assets/fonts/FrutigerNextLT/FrutigerNextLT-BoldItalic.ttf")
+    format("truetype");
+  font-weight: bold; //700
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Frutiger Next LT";
+  src: url("../../assets/fonts/FrutigerNextLT/FrutigerNextLT-Heavy.ttf")
+    format("truetype");
+  font-weight: 850;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Frutiger Next LT";
+  src: url("../../assets/fonts/FrutigerNextLT/FrutigerNextLT-HeavyItalic.ttf")
+    format("truetype");
+  font-weight: 850;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Frutiger Next LT";
+  src: url("../../assets/fonts/FrutigerNextLT/FrutigerNextLT-Black.ttf")
+    format("truetype");
+  font-weight: 1000;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Frutiger Next LT";
+  src: url("../../assets/fonts/FrutigerNextLT/FrutigerNextLT-BlackItalic.ttf")
+    format("truetype");
+  font-weight: 1000;
+  font-style: italic;
+}
+
+* {
+  font-family: $font-secondary;
+  // font-size: $font-md;
+}
+
+h1,
+.h1,
+h1,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: $font-primary;
+  // font-size: $font-xxl;
+  // text-transform: uppercase;
+  // line-height: 0.82;
+}
+
+// .link {
+//   color: $litit-black;
+//   font-size: $font-sm;
+//   font-weight: 800;
+//   text-transform: uppercase;
+//   text-decoration: none;
+// }
