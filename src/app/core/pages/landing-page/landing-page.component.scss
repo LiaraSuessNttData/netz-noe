@@ -3,17 +3,21 @@
 .cover {
   &__img {
     width: 100%;
+    height: 520px;
     border-radius: $border-radius;
   }
 }
 
 .availability {
   &__box {
-    margin-top: -80px;
     z-index: 100;
-    background-color: $noe-black;
     border-radius: $border-radius;
-
-    color: $noe-white;
+    box-sizing: content-box;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: -24px;
+    width: 240px;
   }
 }

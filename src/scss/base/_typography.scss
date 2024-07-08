@@ -118,6 +118,16 @@ h6,
   font-family: $font-primary;
 }
 
+h1 {
+  font-size: $font-xxl-mobile;
+}
+h2 {
+  font-size: $font-xl-mobile;
+}
+h3 {
+  font-size: $font-lg-mobile;
+}
+
 .link {
   color: $noe-black;
   text-decoration: none;

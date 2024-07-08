@@ -11,6 +11,8 @@ $screen-xs-max: calc($screen-sm - 1px);
 
 $noe-black: #000000;
 $noe-white: #ffffff;
+$noe-red: #e0001b;
+$noe-darkred: #7b0006;
 
 $font-primary: Arial, sans-serif;
 $font-secondary: "Frutiger Next LT", Arial, sans-serif;
@@ -21,8 +23,10 @@ $font-md-mobile: 16px;
 $font-md-desktop: 18px;
 $font-lg-mobile: 20px;
 $font-lg-desktop: 28px;
-$font-xl-mobile: 32px;
-$font-xl-desktop: 56px;
+$font-xl-mobile: 24px;
+$font-xl-desktop: 30px;
+$font-xxl-mobile: 32px;
+$font-xxl-desktop: 56px;
 
 $border-radius: 12px;
 

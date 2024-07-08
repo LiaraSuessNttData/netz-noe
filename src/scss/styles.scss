@@ -9,8 +9,9 @@
 // @import "base/reset";
 @import "base/typography";
 
-// @import "components/...";
+@import "components/basic-controls";
 
 @import "layout/structural-elements";
 
-// @import "themes/...";
+@import "themes/default";
+@import "themes/dark";
