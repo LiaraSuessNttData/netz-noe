@@ -1,17 +1,54 @@
-<div class="position-relative d-flex flex-column">
-  <img
-    class="object-fit-cover cover__img"
-    src="assets/images/pic-dummy.png"
-    alt="Landing-Page Banner"
-  />
-  <div
-    class="position-absolute p-4 d-flex flex-column justify-content-center align-items-center gap-3 theme__dark availability__box"
-  >
-    <h1>Wir bauen Energie-Zukunft</h1>
-    <h3>Ich brauche Strom oder Gas</h3>
-    <input class="txt-input rounded-pill txt-input" type="text" placeholder="Adresse eingeben..." />
-    <button class="btn btn-primary rounded-pill">
-      Verfügbarkeit prüfen <i class="bi bi-arrow-right"></i>
+<section class="content__spacing pb-4">
+  <div class="position-relative">
+    <img
+      class="object-fit-cover cover__img"
+      src="assets/images/pic-dummy.png"
+      alt="Landing-Page Banner"
+    />
+    <div
+      class="position-absolute p-4 d-flex flex-column justify-content-center align-items-center gap-3 theme--dark availability__box"
+    >
+      <h1>Wir bauen Energie-Zukunft</h1>
+      <h3>Ich brauche Strom oder Gas</h3>
+      <input class="txt-input" type="text" placeholder="Adresse eingeben..." />
+      <button class="btn btn-primary">
+        Verf&uuml;gbarkeit pr&uuml;fen <i class="bi bi-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="">
+  <div class="content__box content__box--grey content__spacing">
+    <div class="mb-5">
+      <h2>Z&auml;hlerstand</h2>
+      <p>
+        Geben Sie den Z&auml;hlerstand für Ihre analogen Stromz&auml;hler und
+        Ihre Gasz&auml;hler bekannt.
+      </p>
+    </div>
+    <button class="btn btn-primary">
+      Z&auml;hlerstand bekanntgeben <i class="bi bi-arrow-right"></i>
     </button>
   </div>
-</div>
+
+  <div class="content__box content__box--grey content__spacing">
+    <div class="mb-5">
+      <h2>St&ouml;rungen</h2>
+      <p>
+        Alle aktuellen und geplanten St&ouml;rungen und Wartungsarbeiten für
+        Strom und Gas.
+      </p>
+    </div>
+    <button class="btn btn-primary">
+      St&ouml;rungen anzeigen <i class="bi bi-arrow-right"></i>
+    </button>
+  </div>
+
+  <div class="content__box content__box--success content__spacing">
+    <div class="row">
+      <div class="col-3"><i class="bi bi-check-circle"></i></div>
+      <div class="col-9">Momentan keine St&ouml;rung im Netz bekannt.</div>
+    </div>
+  </div>
+</section>

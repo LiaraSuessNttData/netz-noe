@@ -1,0 +1,11 @@
+@import "abstracts/variables";
+
+.content {
+  &__spacing {
+    margin-bottom: $section-gap-mobile;
+  }
+  &__box {
+    border-radius: $border-radius;
+    padding: $box-padding-mobile;
+  }
+}

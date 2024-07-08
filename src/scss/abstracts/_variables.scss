@@ -13,13 +13,16 @@ $noe-black: #000000;
 $noe-white: #ffffff;
 $noe-red: #e0001b;
 $noe-darkred: #7b0006;
+$noe-lightgrey: #f1f1f1;
+$noe-darkgreen: #008435;
+$noe-lightgreen: #e0ffe5;
 
 $font-primary: Arial, sans-serif;
 $font-secondary: "Frutiger Next LT", Arial, sans-serif;
 
 $font-sm-mobile: 14px;
 $font-sm-desktop: 14px;
-$font-md-mobile: 16px;
+$font-md-mobile: 18px;
 $font-md-desktop: 18px;
 $font-lg-mobile: 20px;
 $font-lg-desktop: 28px;
@@ -28,7 +31,14 @@ $font-xl-desktop: 30px;
 $font-xxl-mobile: 32px;
 $font-xxl-desktop: 56px;
 
-$border-radius: 12px;
+$section-gap-mobile: 32px;
+$section-gap-desktop: 72px;
+
+$border-radius: 20px;
+$border-radius-pill: 50rem;
+
+$box-padding-mobile: 24px;
+$box-padding-desktop: 32px;
 
 // override bootstrap spacer variable
 $spacer: 1rem !default;
@@ -42,12 +52,13 @@ $spacers: map-merge(
     2: ($spacer * .5),     //8px
     3: $spacer,            //16px
     4: ($spacer * 1.5),    //24px
-    5: ($spacer * 3),      //48px
-    6: ($spacer * 4),      //64px
-    7: ($spacer * 5),      //80px
-    8: ($spacer * 6.25),   //100px
-    9: ($spacer * 7.5),    //120px
-    10: ($spacer * 9.375)  //150px
+    5: ($spacer * 2),      //32px
+    6: ($spacer * 3),      //48px
+    7: ($spacer * 4),      //64px
+    8: ($spacer * 5),      //80px
+    9: ($spacer * 6.25),   //100px
+    10: ($spacer * 7.5),   //120px
+    11: ($spacer * 9.375)  //150px
   ),
   $spacers
 );

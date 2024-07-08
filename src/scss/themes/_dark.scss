@@ -3,15 +3,36 @@
 $theme-primary: $noe-black;
 $theme-secondary: $noe-white;
 
-.theme__dark {
+.theme--dark {
   background-color: $theme-primary;
   color: $theme-secondary;
-  .btn-primary {
-    border: none;
-    background: linear-gradient(90deg, $noe-red 0%, $noe-darkred 100%);
+  .btn {
+    &.btn-primary {
+      border: none;
+      background: linear-gradient(90deg, $noe-red 0%, $noe-darkred 100%);
+      color: $theme-secondary;
+      &:hover,
+      &:focus,
+      &:active,
+      &:visited {
+        border: none;
+        background: linear-gradient(90deg, $noe-red 0%, $noe-darkred 100%);
+        color: $theme-secondary;
+      }
+    }
   }
   .txt-input {
     border-color: $theme-secondary;
     background-color: $theme-primary;
+    color: $theme-secondary;
+    // Firefox
+    &::placeholder {
+      color: $theme-secondary;
+      opacity: 1;
+    }
+    // Edge 12-18
+    &::-ms-input-placeholder {
+      color: $theme-secondary;
+    }
   }
 }
