@@ -1,0 +1,111 @@
+@use "sass:map";
+
+@import "abstracts/variables";
+
+@mixin position-top-percent {
+  @for $i from -10 through -1 {
+    .top-n#{abs($i * 10)} {
+      top: $i * 10 * 1%;
+    }
+  }
+  @for $i from 0 through 10 {
+    .top-#{$i * 10} {
+      top: $i * 10 * 1%;
+    }
+  }
+}
+
+@mixin position-bottom-percent {
+  @for $i from -10 through -1 {
+    .bottom-n#{abs($i * 10)} {
+      bottom: $i * 10 * 1%;
+    }
+  }
+  @for $i from 0 through 10 {
+    .bottom-#{$i * 10} {
+      bottom: $i * 10 * 1%;
+    }
+  }
+}
+
+@mixin position-left-percent {
+  @for $i from -10 through -1 {
+    .left-n#{abs($i * 10)} {
+      left: $i * 10 * 1%;
+    }
+  }
+  @for $i from 0 through 10 {
+    .left-#{$i * 10} {
+      left: $i * 10 * 1%;
+    }
+  }
+}
+
+@mixin position-right-percent {
+  @for $i from -10 through -1 {
+    .right-n#{abs($i * 10)} {
+      right: $i * 10 * 1%;
+    }
+  }
+  @for $i from 0 through 10 {
+    .right-#{$i * 10} {
+      right: $i * 10 * 1%;
+    }
+  }
+}
+
+@mixin position-top-space {
+  @for $i from -12 through 12 {
+    @if $i < 0 {
+      .top-space-n#{abs($i)} {
+        top: map.get($spacers, #{"n"} + abs($i));
+      }
+    } @else {
+      .top-space-#{$i} {
+        top: map.get($spacers, $i);
+      }
+    }
+  }
+}
+
+@mixin position-bottom-space {
+  @for $i from -12 through 12 {
+    @if $i < 0 {
+      .bottom-space-n#{abs($i)} {
+        bottom: map.get($spacers, #{"n"} + abs($i));
+      }
+    } @else {
+      .bottom-space-#{$i} {
+        bottom: map.get($spacers, $i);
+      }
+    }
+  }
+}
+
+@mixin position-left-space {
+  @for $i from -12 through 12 {
+    @if $i < 0 {
+      .left-space-n#{abs($i)} {
+        left: map.get($spacers, #{"n"} + abs($i));
+      }
+    } @else {
+      .left-space-#{$i} {
+        left: map.get($spacers, $i);
+      }
+    }
+  }
+}
+
+@mixin position-right-space {
+  @for $i from -12 through 12 {
+    @if $i < 0 {
+      .right-space-n#{abs($i)} {
+        right: map.get($spacers, #{"n"} + abs($i));
+      }
+    } @else {
+      .right-space-#{$i} {
+        right: map.get($spacers, $i);
+      }
+    }
+  }
+}

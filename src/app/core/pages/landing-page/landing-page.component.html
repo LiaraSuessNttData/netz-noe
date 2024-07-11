@@ -1,15 +1,17 @@
-<section class="content__spacing pb-4">
+<section class="content__spacing pb-5">
   <div class="position-relative">
     <img
       class="object-fit-cover cover__img"
-      src="assets/images/pic-dummy.png"
+      src="assets/images/pic-dummy-1.png"
       alt="Landing-Page Banner"
     />
     <div
-      class="position-absolute p-4 d-flex flex-column justify-content-center align-items-center gap-3 theme--dark availability__box"
+      class="content__overlay--absolute bottom-space-n5 p-5 d-flex flex-column justify-content-center gap-3 theme--dark"
     >
-      <h1>Wir bauen Energie-Zukunft</h1>
-      <h3>Ich brauche Strom oder Gas</h3>
+      <div class="mb-4">
+        <h1>Wir bauen Energie-Zukunft</h1>
+        <h3>Ich brauche Strom oder Gas</h3>
+      </div>
       <input class="txt-input" type="text" placeholder="Adresse eingeben..." />
       <button class="btn btn-primary">
         Verf&uuml;gbarkeit pr&uuml;fen <i class="bi bi-arrow-right"></i>
@@ -18,9 +20,9 @@
   </div>
 </section>
 
-<section class="">
-  <div class="content__box content__box--grey content__spacing">
-    <div class="mb-5">
+<section class="content__spacing">
+  <div class="content__box content__box--gray content__spacing">
+    <div class="mb-6">
       <h2>Z&auml;hlerstand</h2>
       <p>
         Geben Sie den Z&auml;hlerstand für Ihre analogen Stromz&auml;hler und
@@ -32,8 +34,8 @@
     </button>
   </div>
 
-  <div class="content__box content__box--grey content__spacing">
-    <div class="mb-5">
+  <div class="content__box content__box--gray content__spacing">
+    <div class="mb-6">
       <h2>St&ouml;rungen</h2>
       <p>
         Alle aktuellen und geplanten St&ouml;rungen und Wartungsarbeiten für
@@ -47,8 +49,51 @@
 
   <div class="content__box content__box--success content__spacing">
     <div class="row">
-      <div class="col-3"><i class="bi bi-check-circle"></i></div>
+      <div class="col-3">
+        <i class="bi bi-check-circle content__status-icon"></i>
+      </div>
       <div class="col-9">Momentan keine St&ouml;rung im Netz bekannt.</div>
+    </div>
+  </div>
+</section>
+
+<section class="content__spacing">
+  <img
+    class="object-fit-cover cover__img achievement__image"
+    src="assets/images/pic-dummy-3.png"
+    alt="Kundenportal"
+  />
+
+  <div class="content__overlay mt-n9 mx-5">
+    <div class="grid achievement__grid">
+      <div
+        class="g-col-6 d-flex flex-column justify-content-end content__box--small achievement bg-color--contrast-mustard"
+      >
+        <h3>700.000</h3>
+        <p class="achievement__text">
+          Haushalte und 1,4 Mio. Menschen vertrauen auf uns
+        </p>
+      </div>
+      <div
+        class="g-col-6 d-flex flex-column justify-content-end content__box--small achievement bg-color--contrast-bluegray"
+      >
+        <h3>83.945 km</h3>
+        <p class="achievement__text">verlegte Stromkabel</p>
+      </div>
+      <div
+        class="g-col-6 d-flex flex-column justify-content-end content__box--small achievement bg-color--contrast-peach"
+      >
+        <h3>6.045 km</h3>
+        <p class="achievement__text">verlegte Gasleitungen</p>
+      </div>
+      <div
+        class="g-col-6 d-flex flex-column justify-content-end content__box--small achievement bg-color--contrast-clay"
+      >
+        <h3>98%</h3>
+        <p class="achievement__text">
+          Erzeugung aus nachhaltigen Quellen im August 2023
+        </p>
+      </div>
     </div>
   </div>
 </section>

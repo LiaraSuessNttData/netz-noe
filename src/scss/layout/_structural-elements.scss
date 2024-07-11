@@ -1,4 +1,5 @@
 @import "abstracts/variables";
+@import "abstracts/mixins";
 
 .content {
   &__spacing {
@@ -7,5 +8,79 @@
   &__box {
     border-radius: $border-radius;
     padding: $box-padding-mobile;
+  }
+  &__box--small {
+    border-radius: $border-radius-small;
+    padding: $box-padding-small;
+  }
+  &__status-icon {
+    font-size: $icon-md;
+    line-height: 1;
+  }
+  &__overlay {
+    z-index: 100;
+    border-radius: $border-radius;
+    box-sizing: content-box;
+    &--absolute {
+      position: absolute;
+      z-index: 100;
+      border-radius: $border-radius;
+      box-sizing: content-box;
+      margin-left: auto;
+      margin-right: auto;
+      left: 24px;
+      right: 24px;
+    }
+  }
+}
+
+.bg-color {
+  &--base-black {
+    background-color: $base-black;
+  }
+  &--base-darkgray {
+    background-color: $base-darkgray;
+  }
+  &--base-gray {
+    background-color: $base-gray;
+  }
+  &--base-white {
+    background-color: $base-white;
+  }
+  &--base-red {
+    background-color: $base-red;
+  }
+  &--accent-khaki {
+    background-color: $accent-khaki;
+  }
+  &--accent-rose {
+    background-color: $accent-rose;
+  }
+  &--accent-orange {
+    background-color: $accent-orange;
+  }
+  &--accent-purple {
+    background-color: $accent-purple;
+  }
+  &--accent-yellow {
+    background-color: $accent-yellow;
+  }
+  &--contrast-mustard {
+    background-color: $contrast-mustard;
+  }
+  &--contrast-bluegray {
+    background-color: $contrast-bluegray;
+  }
+  &--contrast-peach {
+    background-color: $contrast-peach;
+  }
+  &--contrast-clay {
+    background-color: $contrast-clay;
+  }
+  &--misc-lightgray {
+    background-color: $misc-lightgray;
+  }
+  &--misc-darkred {
+    background-color: $misc-darkred;
   }
 }

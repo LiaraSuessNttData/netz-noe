@@ -2,11 +2,9 @@
 @import "abstracts/functions";
 @import "abstracts/mixins";
 
-// import bootstrap here instead of in angular.json so we can override variables
-@import "../../node_modules/bootstrap/scss/bootstrap";
-@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+// import vendors here instead of in angular.json so we can override variables etc.
+@import "vendors/bootstrap";
 
-// @import "base/reset";
 @import "base/typography";
 
 @import "components/basic-controls";
@@ -16,3 +14,5 @@
 @import "themes/default";
 @import "themes/dark";
 @import "themes/success";
+@import "themes/warning";
+@import "themes/danger";

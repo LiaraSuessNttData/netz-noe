@@ -9,13 +9,37 @@ $screen-sm-max: calc($screen-md - 1px);
 $screen-sm: 576px;
 $screen-xs-max: calc($screen-sm - 1px);
 
-$noe-black: #000000;
-$noe-white: #ffffff;
-$noe-red: #e0001b;
-$noe-darkred: #7b0006;
-$noe-lightgrey: #f1f1f1;
-$noe-darkgreen: #008435;
-$noe-lightgreen: #e0ffe5;
+// base colors
+$base-black: #000000;
+$base-darkgray: #1c1c1c;
+$base-gray: #777777;
+$base-white: #ffffff;
+$base-red: #e0001b;
+
+// accent colors
+$accent-khaki: #6c9a8b;
+$accent-rose: #eed2cc;
+$accent-orange: #ff8a32;
+$accent-purple: #9381ff;
+$accent-yellow: #f7ff0a;
+
+// contrast colors
+$contrast-mustard: #f2da85;
+$contrast-bluegray: #b0b9ca;
+$contrast-peach: #f7d6a7;
+$contrast-clay: #ece1d8;
+
+// status colors
+$success-primary: #008435;
+$success-secondary: #e0ffe5;
+$warning-primary: #fab400;
+$warning-secondary: #fff1cc;
+$danger-primary: #ffcccc;
+$danger-secondary: #fa0000;
+
+// misc colors
+$misc-lightgray: #f1f1f1;
+$misc-darkred: #7b0006;
 
 $font-primary: Arial, sans-serif;
 $font-secondary: "Frutiger Next LT", Arial, sans-serif;
@@ -31,12 +55,17 @@ $font-xl-desktop: 30px;
 $font-xxl-mobile: 32px;
 $font-xxl-desktop: 56px;
 
+$icon-sm: 32px;
+$icon-md: 48px;
+
 $section-gap-mobile: 32px;
 $section-gap-desktop: 72px;
 
+$border-radius-small: 6px;
 $border-radius: 20px;
 $border-radius-pill: 50rem;
 
+$box-padding-small: 16px;
 $box-padding-mobile: 24px;
 $box-padding-desktop: 32px;
 
@@ -47,18 +76,31 @@ $spacers: () !default;
 // prettier-ignore
 $spacers: map-merge(
   (
+    "n12": -($spacer * 9.375), //-150px
+    "n11": -($spacer * 7.5),  //-120px
+    "n10": -($spacer * 6.25), //-100px
+    "n9": -($spacer * 5),     //-80px
+    "n8": -($spacer * 4),     //-64px
+    "n7": -($spacer * 3),     //-48px
+    "n6": -($spacer * 2),     //-32px
+    "n5": -($spacer * 1.5),   //-24px
+    "n4": -$spacer,           //-16px
+    "n3": -($spacer * .75),   //-12px
+    "n2": -($spacer * .5),    //-8px
+    "n1": -($spacer * .25),   //-4px
     0: 0,
-    1: ($spacer * .25),    //4px
-    2: ($spacer * .5),     //8px
-    3: $spacer,            //16px
-    4: ($spacer * 1.5),    //24px
-    5: ($spacer * 2),      //32px
-    6: ($spacer * 3),      //48px
-    7: ($spacer * 4),      //64px
-    8: ($spacer * 5),      //80px
-    9: ($spacer * 6.25),   //100px
-    10: ($spacer * 7.5),   //120px
-    11: ($spacer * 9.375)  //150px
+    1: ($spacer * .25),     //4px
+    2: ($spacer * .5),      //8px
+    3: ($spacer * .75),     //12px
+    4: $spacer,             //16px
+    5: ($spacer * 1.5),     //24px
+    6: ($spacer * 2),       //32px
+    7: ($spacer * 3),       //48px
+    8: ($spacer * 4),       //64px
+    9: ($spacer * 5),       //80px
+    10: ($spacer * 6.25),   //100px
+    11: ($spacer * 7.5),    //120px
+    12: ($spacer * 9.375)   //150px
   ),
   $spacers
 );

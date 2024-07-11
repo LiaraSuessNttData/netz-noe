@@ -8,16 +8,20 @@
   }
 }
 
-.availability {
-  &__box {
-    z-index: 100;
-    border-radius: $border-radius;
-    box-sizing: content-box;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    bottom: -24px;
-    width: 240px;
+.achievement {
+  box-sizing: content-box;
+  &__image {
+    height: 220px;
+  }
+  &__grid {
+    grid-auto-rows: 1fr;
+    --bs-gap: 12px;
+    @media screen and (min-width: $screen-md) {
+      --bs-gap: 24px;
+    }
+  }
+  &__text {
+    margin: 0;
+    font-size: $font-sm-mobile;
   }
 }

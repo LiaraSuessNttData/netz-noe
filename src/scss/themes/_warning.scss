@@ -1,0 +1,8 @@
+@import "abstracts/variables";
+
+.content__box {
+  &--warning {
+    background-color: $warning-secondary;
+    color: $warning-primary;
+  }
+}

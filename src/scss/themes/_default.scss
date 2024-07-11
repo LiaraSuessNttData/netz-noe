@@ -1,23 +1,23 @@
 @import "abstracts/variables";
 
 .content__box {
-  &--grey {
-    background-color: $noe-lightgrey;
+  &--gray {
+    background-color: $misc-lightgray;
   }
 }
 
 .btn {
   &.btn-primary {
-    border: 2px solid $noe-black;
-    background-color: $noe-white;
-    color: $noe-black;
+    border: none;
+    background-color: $base-white;
+    color: $base-black;
     &:hover,
     &:focus,
     &:active,
     &:visited {
-      border: 2px solid $noe-black;
-      background-color: $noe-white;
-      color: $noe-black;
+      border: 2px solid $base-black;
+      background-color: $base-white;
+      color: $base-black;
     }
   }
 }

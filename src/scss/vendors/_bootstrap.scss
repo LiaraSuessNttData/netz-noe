@@ -1,0 +1,17 @@
+// configure bootstrap and override variables and styles
+// import bootstrap afterwards
+@import "abstracts/mixins";
+
+$enable-cssgrid: true;
+
+@include position-top-percent;
+@include position-bottom-percent;
+@include position-left-percent;
+@include position-right-percent;
+@include position-top-space;
+@include position-bottom-space;
+@include position-left-space;
+@include position-right-space;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";

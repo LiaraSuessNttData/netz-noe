@@ -1,0 +1,8 @@
+@import "abstracts/variables";
+
+.content__box {
+  &--danger {
+    background-color: $danger-secondary;
+    color: $danger-primary;
+  }
+}

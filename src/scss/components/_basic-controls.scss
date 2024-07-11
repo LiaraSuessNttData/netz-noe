@@ -1,7 +1,7 @@
 @import "abstracts/variables";
 
 .btn {
-  border: 2px solid $noe-black;
+  border: none;
   border-radius: $border-radius-pill;
   padding: 12px 24px;
   box-sizing: border-box;
@@ -9,7 +9,7 @@
 }
 
 .txt-input {
-  border: 2px solid $noe-black;
+  border: 2px solid $base-black;
   border-radius: $border-radius-pill;
   padding: 12px 24px;
   box-sizing: border-box;
