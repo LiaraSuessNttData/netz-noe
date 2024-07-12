@@ -3,7 +3,22 @@
 
 .content {
   &__spacing {
+    margin-top: $section-gap-mobile;
     margin-bottom: $section-gap-mobile;
+  }
+  &__spacing--start {
+    margin-top: $section-gap-mobile;
+  }
+  &__spacing--end {
+    margin-bottom: $section-gap-mobile;
+  }
+  &__container-stretch {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: $section-gap-mobile;
+    padding-bottom: $section-gap-mobile;
   }
   &__box {
     border-radius: $border-radius;

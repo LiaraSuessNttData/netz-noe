@@ -1,11 +1,5 @@
 @import "abstracts/variables";
 
-.content__box {
-  &--gray {
-    background-color: $misc-lightgray;
-  }
-}
-
 .btn {
   &.btn-primary {
     border: none;

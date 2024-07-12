@@ -37,3 +37,14 @@ $btn-primary-gradient: linear-gradient(90deg, $base-red 0%, $misc-darkred 100%);
     }
   }
 }
+
+.link {
+  color: $theme-secondary;
+}
+
+.list {
+  &--linked a {
+    color: $theme-secondary;
+    text-decoration: none;
+  }
+}
