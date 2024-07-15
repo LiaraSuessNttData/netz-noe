@@ -1,10 +1,34 @@
-<nav class="navbar d-flex flex-row justify-content-between mb-4">
-  <img
-    class="company-logo"
-    src="assets/images/netz-noe-logo.svg"
-    alt="Netz NÖ Logo"
-  />
-  <a href="#" class="nav-list__btn-burger link"
-    ><i class="nav-list__btn-icon bi bi-list"></i>
-  </a>
+<nav class="navbar d-flex flex-column mb-4">
+  <div class="w-100 mb-4 d-flex flex-row justify-content-between">
+    <a [routerLink]="['/']"
+      ><img
+        class="company-logo"
+        src="assets/images/netz-noe-logo.svg"
+        alt="Netz NÖ Logo"
+    /></a>
+    <a
+      class="nav-list__btn-burger link"
+      data-bs-toggle="collapse"
+      data-bs-target="#navMain"
+      aria-controls="collapse"
+      aria-expanded="false"
+      aria-label="Navigation ein- & ausklappen"
+    >
+      <i class="nav-list__btn-icon bi bi-list"></i>
+    </a>
+  </div>
+  <div class="w-100 collapse navbar-collapse" id="navMain">
+    <ul class="navbar-nav dropdown d-flex flex-column align-items-end">
+      <li class="nav-item"><a class="nav-link">Strom</a></li>
+      <li class="nav-item"><a class="nav-link">Gas</a></li>
+      <li class="nav-item">
+        <a [routerLink]="['/', 'netz-service-portal']" class="nav-link"
+          >Services</a
+        >
+      </li>
+      <li class="nav-item"><a class="nav-link">Energieauskunft</a></li>
+      <li class="nav-item"><a class="nav-link">Wissen</a></li>
+      <li class="nav-item"><a class="nav-link">Mein Bereich</a></li>
+    </ul>
+  </div>
 </nav>

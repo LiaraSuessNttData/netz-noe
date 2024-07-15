@@ -9,7 +9,7 @@
     &:focus,
     &:active,
     &:visited {
-      border: 2px solid $base-black;
+      border: none;
       background-color: $base-white;
       color: $base-black;
     }

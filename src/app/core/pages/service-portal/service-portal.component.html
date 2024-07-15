@@ -1,0 +1,131 @@
+<section class="content__spacing--end">
+  <div class="image-container image-container--large position-relative pb-8">
+    <video
+      class="object-fit-cover image-container__video--full-bleed"
+      muted
+      autoplay
+      loop
+    >
+      <source src="/assets/videos/dummy-vid-1.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div
+      class="content__overlay--absolute bottom-0 p-5 d-flex flex-column justify-content-center gap-3 theme--dark"
+    >
+      <div class="mb-4">
+        <h1 class="text--xlarge">Status meiner Bearbeitung prüfen</h1>
+      </div>
+      <input class="txt-input" type="text" placeholder="Nachname / Firma" />
+      <input
+        class="txt-input"
+        type="text"
+        placeholder="S-DW-22-123456789-XXX "
+      />
+      <button class="btn btn-primary w-100">
+        Status pr&uuml;fen <i class="bi bi-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="content__spacing--end">
+  <ul class="nav nav-tabs nav-connection" id="connectionTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link active"
+        id="establish-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#establish-tab-pane"
+        type="button"
+        role="tab"
+        aria-controls="establish-tab-pane"
+        aria-selected="true"
+      >
+        <i class="bi bi-plus-circle"></i> Errichten
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link"
+        id="edit-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#edit-tab-pane"
+        type="button"
+        role="tab"
+        aria-controls="edit-tab-pane"
+        aria-selected="false"
+      >
+        <i class="bi bi-sliders"></i> Ändern
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link"
+        id="supply-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#supply-tab-pane"
+        type="button"
+        role="tab"
+        aria-controls="supply-tab-pane"
+        aria-selected="false"
+      >
+        <i class="bi bi-lightbulb"></i> Einspeisen
+      </button>
+    </li>
+  </ul>
+  <div class="tab-content panel-connection" id="connectionTabContent">
+    <div
+      class="tab-pane fade show active"
+      id="establish-tab-pane"
+      role="tabpanel"
+      aria-labelledby="establish-tab"
+      tabindex="0"
+    >
+      <div class="mt-2 mb-6">
+        <span class="text-uppercase">Neuen Anschluss errichten</span>
+        <p class="text--xsmall">
+          Sie wollen einen neuen Strom- oder Gasanschluss errichten.
+        </p>
+      </div>
+      <div class="d-flex flex-column align-items-center">
+        <button class="btn btn-primary">
+          jetzt einrichten <i class="bi bi-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="edit-tab-pane"
+      role="tabpanel"
+      aria-labelledby="edit-tab"
+      tabindex="1"
+    >
+      <div class="mt-2 mb-6">
+        <span class="text-uppercase">Anschluss ändern</span>
+        <p class="text--xsmall">Ändern Sie Ihren Anschluss.</p>
+      </div>
+      <div class="d-flex flex-column align-items-center">
+        <button class="btn btn-primary">
+          Hier ändern <i class="bi bi-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="supply-tab-pane"
+      role="tabpanel"
+      aria-labelledby="supply-tab"
+      tabindex="2"
+    >
+      <div class="mt-2 mb-6">
+        <span class="text-uppercase">Energie einspeisen</span>
+        <p class="text--xsmall">Sie möchten Energie einspeisen.</p>
+      </div>
+      <div class="d-flex flex-column align-items-center">
+        <button class="btn btn-primary">
+          Mehr erfahren <i class="bi bi-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

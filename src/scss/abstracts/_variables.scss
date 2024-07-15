@@ -38,15 +38,20 @@ $danger-primary: #ffcccc;
 $danger-secondary: #fa0000;
 
 // misc colors
-$misc-lightgray: #f1f1f1;
+$misc-lightgray: #f2f2f2;
 $misc-darkred: #7b0006;
+
+// gradients
+$gradient-red-darkred: linear-gradient(90deg, $base-red 0%, $misc-darkred 100%);
 
 $font-primary: "Martina Plantijn", Arial, sans-serif;
 $font-secondary: "Frutiger Next LT", Arial, sans-serif;
 
+$font-xs-mobile: 12px;
+$font-xs-desktop: 12px;
 $font-sm-mobile: 14px;
 $font-sm-desktop: 14px;
-$font-md-mobile: 18px;
+$font-md-mobile: 16px;
 $font-md-desktop: 18px;
 $font-lg-mobile: 20px;
 $font-lg-desktop: 28px;
@@ -69,7 +74,8 @@ $section-gap-mobile: 32px;
 $section-gap-desktop: 72px;
 
 $border-radius-small: 6px;
-$border-radius: 20px;
+$border-radius-medium: 12px;
+$border-radius-large: 20px;
 $border-radius-pill: 50rem;
 
 $box-padding-small: 16px;
@@ -111,3 +117,8 @@ $spacers: map-merge(
   ),
   $spacers
 );
+
+$img-height-small-mobile: 220px;
+$img-height-meidum-mobile: 320px;
+$img-height-large-mobile: 420px;
+$img-height-xlarge-mobile: 520px;

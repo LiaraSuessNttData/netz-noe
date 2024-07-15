@@ -9,6 +9,16 @@ export const routes: Routes = [
       ),
   },
   {
+    path: 'netz-service-portal',
+    loadComponent: () =>
+      import('./core/pages/service-portal/service-portal.component').then((m) => m.ServicePortalComponent),
+  },
+  {
+    path: 'planauskunft',
+    loadComponent: () =>
+      import('./core/pages/plan/plan.component').then((m) => m.PlanComponent),
+  },
+  {
     path: '**',
     loadComponent: () =>
       import('./core/pages/landing-page/landing-page.component').then(

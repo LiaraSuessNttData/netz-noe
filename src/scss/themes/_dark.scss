@@ -2,22 +2,24 @@
 
 $theme-primary: $base-black;
 $theme-secondary: $base-white;
-$btn-primary-gradient: linear-gradient(90deg, $base-red 0%, $misc-darkred 100%);
 
 .theme--dark {
   background-color: $theme-primary;
   color: $theme-secondary;
+  &.content__full-bleed {
+    box-shadow: 0 0 0 100vmax $theme-primary;
+  }
   .btn {
     &.btn-primary {
       border: none;
-      background: $btn-primary-gradient;
+      background: $gradient-red-darkred;
       color: $theme-secondary;
       &:hover,
       &:focus,
       &:active,
       &:visited {
         border: none;
-        background: $btn-primary-gradient;
+        background: $gradient-red-darkred;
         color: $theme-secondary;
       }
     }
@@ -36,15 +38,15 @@ $btn-primary-gradient: linear-gradient(90deg, $base-red 0%, $misc-darkred 100%);
       color: $theme-secondary;
     }
   }
-}
 
-.link {
-  color: $theme-secondary;
-}
-
-.list {
-  &--linked a {
+  .link {
     color: $theme-secondary;
-    text-decoration: none;
+  }
+
+  .list {
+    &--linked a {
+      color: $theme-secondary;
+      text-decoration: none;
+    }
   }
 }

@@ -1,5 +1,11 @@
 @import "abstracts/variables";
 
+$theme-primary: $misc-lightgray;
+$theme-secondary: $base-black;
+
 .theme--gray {
-  background-color: $misc-lightgray;
+  background-color: $theme-primary;
+  &.content__full-bleed {
+    box-shadow: 0 0 0 100vmax $theme-primary;
+  }
 }

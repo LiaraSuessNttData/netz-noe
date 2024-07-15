@@ -185,7 +185,7 @@
 * {
   font-family: $font-secondary;
   font-size: $font-md-mobile;
-  font-weight: 50 0;
+  font-weight: 500;
   @media screen and (min-width: $screen-md) {
     font-size: $font-md-desktop;
   }
@@ -224,8 +224,23 @@ h4,
 }
 
 .text {
-  &--important {
-    font-size: $font-xl-mobile;
+  &--xsmall {
+    font-size: $font-xs-mobile !important;
+  }
+  &--small {
+    font-size: $font-sm-mobile !important;
+  }
+  &--medium {
+    font-size: $font-md-mobile !important;
+  }
+  &--large {
+    font-size: $font-lg-mobile !important;
+  }
+  &--xlarge {
+    font-size: $font-xl-mobile !important;
+  }
+  &--xxlarge {
+    font-size: $font-xxl-mobile !important;
   }
 }
 

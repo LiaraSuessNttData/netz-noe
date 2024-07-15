@@ -1,0 +1,44 @@
+@import "abstracts/variables";
+
+.nav-connection {
+  border: none;
+  .nav-link {
+    margin-right: 4px;
+    position: relative;
+    font-size: $font-sm-mobile;
+    border: 1px solid transparent;
+    border-radius: $border-radius-medium $border-radius-medium 0 0;
+    background: $base-white;
+    background-clip: padding-box;
+    border-bottom: none;
+    color: $base-black;
+    &::after {
+      position: absolute;
+      top: -1px;
+      bottom: -1px;
+      left: -1px;
+      right: -1px;
+      border-radius: $border-radius-medium $border-radius-medium 0 0;
+      background: $gradient-red-darkred;
+      content: "";
+      z-index: -1;
+    }
+    &.active {
+      background: $gradient-red-darkred;
+      color: $base-white;
+    }
+  }
+}
+
+.panel-connection {
+  .tab-pane {
+    background: $gradient-red-darkred;
+    border: none;
+    border-radius: 0 $border-radius-large $border-radius-large;
+    padding: 16px;
+    color: $base-white;
+  }
+  .btn {
+    width: max-content;
+  }
+}

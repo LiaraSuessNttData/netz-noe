@@ -5,23 +5,29 @@
   &__spacing {
     margin-top: $section-gap-mobile;
     margin-bottom: $section-gap-mobile;
+    &--start {
+      margin-top: $section-gap-mobile;
+    }
+    &--end {
+      margin-bottom: $section-gap-mobile;
+    }
   }
-  &__spacing--start {
-    margin-top: $section-gap-mobile;
-  }
-  &__spacing--end {
-    margin-bottom: $section-gap-mobile;
-  }
-  &__container-stretch {
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+  &__padding {
     padding-top: $section-gap-mobile;
     padding-bottom: $section-gap-mobile;
+    &--start {
+      padding-top: $section-gap-mobile;
+    }
+    &--end {
+      padding-bottom: $section-gap-mobile;
+    }
+  }
+  &__full-bleed {
+    box-shadow: 0 0 0 100vmax $base-white;
+    clip-path: inset(0 -100vmax);
   }
   &__box {
-    border-radius: $border-radius;
+    border-radius: $border-radius-large;
     padding: $box-padding-mobile;
   }
   &__box--small {
@@ -33,19 +39,54 @@
     line-height: 1;
   }
   &__overlay {
+    position: relative;
     z-index: 100;
-    border-radius: $border-radius;
+    border-radius: $border-radius-large;
     box-sizing: content-box;
     &--absolute {
       position: absolute;
       z-index: 100;
-      border-radius: $border-radius;
+      border-radius: $border-radius-large;
       box-sizing: content-box;
       margin-left: auto;
       margin-right: auto;
       left: 24px;
       right: 24px;
     }
+  }
+}
+
+.image-container {
+  &__image {
+    width: 100%;
+    border-radius: $border-radius-large;
+  }
+  &__video--full-bleed {
+    position: absolute;
+    display: block;
+    object-fit: cover;
+    height: inherit;
+    width: 100vw;
+    left: -0.75rem;
+    @media screen and (min-width: $screen-md) {
+      left: -1.5rem;
+    }
+  }
+  &--small {
+    box-sizing: content-box;
+    height: $img-height-small-mobile;
+  }
+  &--medium {
+    box-sizing: content-box;
+    height: $img-height-meidum-mobile;
+  }
+  &--large {
+    box-sizing: content-box;
+    height: $img-height-large-mobile;
+  }
+  &--xlarge {
+    box-sizing: content-box;
+    height: $img-height-xlarge-mobile;
   }
 }
 

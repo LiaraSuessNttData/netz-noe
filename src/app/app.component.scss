@@ -1,0 +1,7 @@
+@import "abstracts/variables";
+
+.main {
+  @media screen and (min-width: $screen-md) {
+    padding: 0 1.5rem;
+  }
+}

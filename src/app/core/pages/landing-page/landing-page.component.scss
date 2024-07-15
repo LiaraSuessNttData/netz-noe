@@ -1,13 +1,13 @@
 @import "abstracts/variables";
 
 $img-height-cover-mobile: 520px;
-$img-height-default-mobile: 220px;
+$img-height-small-mobile: 220px;
 
 .cover {
   &__image {
     width: 100%;
     height: $img-height-cover-mobile;
-    border-radius: $border-radius;
+    border-radius: $border-radius-large;
   }
 }
 
@@ -20,11 +20,6 @@ $img-height-default-mobile: 220px;
 
 .achievement {
   box-sizing: content-box;
-  &__image {
-    width: 100%;
-    height: $img-height-default-mobile;
-    border-radius: $border-radius;
-  }
   &__grid {
     grid-auto-rows: 1fr;
     --bs-gap: 12px;
@@ -35,13 +30,5 @@ $img-height-default-mobile: 220px;
   &__text {
     margin: 0;
     font-size: $font-sm-mobile;
-  }
-}
-
-.news-article {
-  &__image {
-    width: 100%;
-    height: $img-height-default-mobile;
-    border-radius: $border-radius;
   }
 }
