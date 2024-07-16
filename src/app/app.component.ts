@@ -12,5 +12,5 @@ import { FooterComponent } from './core/components/footer/footer.component';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'NetzNoe';
+  title = 'netz-noe';
 }

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "NetzNoe": {
+    "netz-noe": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "NetzNoe:build:production"
+              "buildTarget": "netz-noe:build:production"
             },
             "development": {
-              "buildTarget": "NetzNoe:build:development"
+              "buildTarget": "netz-noe:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "NetzNoe:build"
+            "buildTarget": "netz-noe:build"
           }
         },
         "test": {
