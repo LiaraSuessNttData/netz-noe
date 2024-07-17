@@ -14,7 +14,7 @@
   .company-logo {
     height: 48px;
     @include screen-min("md") {
-      height: 80px;
+      height: 64px;
     }
     // &__tag {
     //   background-color: $base-white;
