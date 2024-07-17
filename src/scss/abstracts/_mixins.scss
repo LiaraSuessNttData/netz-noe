@@ -5,12 +5,12 @@
 @mixin position-top-percent {
   @for $i from -10 through -1 {
     .top-n#{abs($i * 10)} {
-      top: $i * 10 * 1%;
+      top: $i * 10 * 1% !important;
     }
   }
   @for $i from 0 through 10 {
     .top-#{$i * 10} {
-      top: $i * 10 * 1%;
+      top: $i * 10 * 1% !important;
     }
   }
 }
@@ -18,12 +18,12 @@
 @mixin position-bottom-percent {
   @for $i from -10 through -1 {
     .bottom-n#{abs($i * 10)} {
-      bottom: $i * 10 * 1%;
+      bottom: $i * 10 * 1% !important;
     }
   }
   @for $i from 0 through 10 {
     .bottom-#{$i * 10} {
-      bottom: $i * 10 * 1%;
+      bottom: $i * 10 * 1% !important;
     }
   }
 }
@@ -31,12 +31,12 @@
 @mixin position-left-percent {
   @for $i from -10 through -1 {
     .left-n#{abs($i * 10)} {
-      left: $i * 10 * 1%;
+      left: $i * 10 * 1% !important;
     }
   }
   @for $i from 0 through 10 {
     .left-#{$i * 10} {
-      left: $i * 10 * 1%;
+      left: $i * 10 * 1% !important;
     }
   }
 }
@@ -44,12 +44,12 @@
 @mixin position-right-percent {
   @for $i from -10 through -1 {
     .right-n#{abs($i * 10)} {
-      right: $i * 10 * 1%;
+      right: $i * 10 * 1% !important;
     }
   }
   @for $i from 0 through 10 {
     .right-#{$i * 10} {
-      right: $i * 10 * 1%;
+      right: $i * 10 * 1% !important;
     }
   }
 }
@@ -58,11 +58,11 @@
   @for $i from -12 through 12 {
     @if $i < 0 {
       .top-space-n#{abs($i)} {
-        top: map.get($spacers, #{"n"} + abs($i));
+        top: map.get($spacers, #{"n"} + abs($i)) !important;
       }
     } @else {
       .top-space-#{$i} {
-        top: map.get($spacers, $i);
+        top: map.get($spacers, $i) !important;
       }
     }
   }
@@ -72,11 +72,11 @@
   @for $i from -12 through 12 {
     @if $i < 0 {
       .bottom-space-n#{abs($i)} {
-        bottom: map.get($spacers, #{"n"} + abs($i));
+        bottom: map.get($spacers, #{"n"} + abs($i)) !important;
       }
     } @else {
       .bottom-space-#{$i} {
-        bottom: map.get($spacers, $i);
+        bottom: map.get($spacers, $i) !important;
       }
     }
   }
@@ -86,11 +86,11 @@
   @for $i from -12 through 12 {
     @if $i < 0 {
       .left-space-n#{abs($i)} {
-        left: map.get($spacers, #{"n"} + abs($i));
+        left: map.get($spacers, #{"n"} + abs($i)) !important;
       }
     } @else {
       .left-space-#{$i} {
-        left: map.get($spacers, $i);
+        left: map.get($spacers, $i) !important;
       }
     }
   }
@@ -100,11 +100,11 @@
   @for $i from -12 through 12 {
     @if $i < 0 {
       .right-space-n#{abs($i)} {
-        right: map.get($spacers, #{"n"} + abs($i));
+        right: map.get($spacers, #{"n"} + abs($i)) !important;
       }
     } @else {
       .right-space-#{$i} {
-        right: map.get($spacers, $i);
+        right: map.get($spacers, $i) !important;
       }
     }
   }
