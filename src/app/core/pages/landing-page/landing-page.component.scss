@@ -20,7 +20,11 @@ $img-height-small-mobile: 220px;
 .customer-portal {
   &__image {
     color: $base-white;
-    background-image: url("/assets/images/pic-dummy-2.png");
+    background-image: url("/assets/images/pic-dummy-1.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     @include screen-min("md") {
       height: 480px;
     }
@@ -63,4 +67,34 @@ $img-height-small-mobile: 220px;
     margin: 0;
     font-size: $font-sm-mobile;
   }
+}
+
+.news {
+  &__section {
+    @include screen-min("md") {
+     background-color: $base-white;
+     box-shadow: none;
+     padding-top: 0;
+    }
+  }
+  &__grid {
+    grid-auto-rows: 1fr;
+  }
+  &__article {
+    @include screen-min("md") {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  } 
+  &__image {
+    @include screen-min("md") {
+      height: 360px;
+    }
+  }
+  &__article-btn {
+    @include screen-min("md") {
+      width: fit-content; 
+    }
+  } 
 }

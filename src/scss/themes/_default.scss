@@ -3,13 +3,27 @@
 .btn {
   &.btn-primary {
     border: none;
+    background-color: $base-black;
+    color: $base-white;
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited {
+      border: none;
+      background-color: $base-black;
+      color: $base-white;
+    }
+  }
+
+  &.btn-secondary {
+    border: 2px solid $base-black;
     background-color: $base-white;
     color: $base-black;
     &:hover,
     &:focus,
     &:active,
     &:visited {
-      border: none;
+      border: 2px solid $base-black;
       background-color: $base-white;
       color: $base-black;
     }
