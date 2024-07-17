@@ -1,13 +1,19 @@
 @import "abstracts/variables";
+@import "abstracts/mixins";
 
 $img-height-cover-mobile: 520px;
 $img-height-small-mobile: 220px;
 
 .cover {
   &__image {
-    width: 100%;
-    height: $img-height-cover-mobile;
-    border-radius: $border-radius-large;
+  }
+}
+
+.availability {
+  @include screen-min("md") {
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }
 
@@ -15,16 +21,42 @@ $img-height-small-mobile: 220px;
   &__image {
     color: $base-white;
     background-image: url("/assets/images/pic-dummy-2.png");
+    @include screen-min("md") {
+      height: 480px;
+    }
   }
 }
 
 .achievement {
+  $achv-height: 560px;
+  $achv-grid-top-spacing: 112px;
   box-sizing: content-box;
+  color: $base-white;
+  &__image {
+    @include screen-min("md") {
+      height: $achv-height;
+    }
+  }
   &__grid {
     grid-auto-rows: 1fr;
     --bs-gap: 12px;
-    @media screen and (min-width: $screen-md) {
+    @include screen-min("md") {
       --bs-gap: 24px;
+    }
+  }
+  &__grid-container {
+    @include screen-min("md") {
+      height: $achv-height - $achv-grid-top-spacing;
+      width: 550px;
+      margin-top: -($achv-height - $achv-grid-top-spacing) !important;
+      margin-left: auto !important;
+      margin-right: -200px !important;
+      margin-bottom: 0;
+    }
+  }
+  &__metric {
+    @include screen-min("md") {
+      margin-bottom: 32px;
     }
   }
   &__text {

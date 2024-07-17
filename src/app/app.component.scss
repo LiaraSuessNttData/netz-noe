@@ -1,7 +1,8 @@
 @import "abstracts/variables";
+@import "abstracts/mixins";
 
 .main {
-  @media screen and (min-width: $screen-md) {
+  @include screen-min("md") {
     padding: 0 1.5rem;
   }
 }

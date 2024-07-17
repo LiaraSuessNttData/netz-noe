@@ -2,6 +2,20 @@
 
 @import "abstracts/variables";
 
+@mixin screen-min($size) {
+  $query: map-get($breakpoints-min, $size);
+  @media screen and (min-width: #{$query}) {
+    @content;
+  }
+}
+
+@mixin screen-max($size) {
+  $query: map-get($breakpoints-max, $size);
+  @media screen and (max-width: #{$query}) {
+    @content;
+  }
+}
+
 @mixin position-top-percent {
   @for $i from -10 through -1 {
     .top-n#{abs($i * 10)} {

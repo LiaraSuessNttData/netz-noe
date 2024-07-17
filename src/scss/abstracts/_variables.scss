@@ -1,13 +1,31 @@
-$screen-xxl: 1440px;
-$screen-xl-max: calc($screen-xxl - 1px);
-$screen-xl: 1200px;
-$screen-lg-max: calc($screen-xl - 1px);
-$screen-lg: 992px;
-$screen-md-max: calc($screen-lg - 1px);
-$screen-md: 768px;
-$screen-sm-max: calc($screen-md - 1px);
+// breakpoints
 $screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xxl: 1440px;
+
 $screen-xs-max: calc($screen-sm - 1px);
+$screen-sm-max: calc($screen-md - 1px);
+$screen-md-max: calc($screen-lg - 1px);
+$screen-lg-max: calc($screen-xl - 1px);
+$screen-xl-max: calc($screen-xxl - 1px);
+
+$breakpoints-min: (
+  "sm": $screen-sm,
+  "md": $screen-md,
+  "lg": $screen-lg,
+  "xl": $screen-xl,
+  "xxl": $screen-xxl,
+);
+
+$breakpoints-max: (
+  "xs": $screen-xs-max,
+  "sm": $screen-sm-max,
+  "md": $screen-md-max,
+  "lg": $screen-lg-max,
+  "xlx": $screen-xl-max,
+);
 
 // base colors
 $base-black: #000000;
@@ -21,10 +39,11 @@ $accent-khaki: #6c9a8b;
 $accent-rose: #eed2cc;
 $accent-orange: #ff8a32;
 $accent-purple: #9381ff;
-$accent-yellow: #f7ff0a;
+$accent-lime: #e1ef83;
+$accent-darkblue: #122138;
 
 // contrast colors
-$contrast-mustard: #f2da85;
+$contrast-mustard: #f7d062;
 $contrast-bluegray: #b0b9ca;
 $contrast-peach: #f7d6a7;
 $contrast-clay: #ece1d8;
@@ -40,6 +59,9 @@ $danger-secondary: #fa0000;
 // misc colors
 $misc-lightgray: #f2f2f2;
 $misc-darkred: #7b0006;
+$misc-lilac: #bdb2ff;
+$misc-darkorange: #e26c3f;
+$misc-brown: #d4a47b;
 
 // gradients
 $gradient-red-darkred: linear-gradient(90deg, $base-red 0%, $misc-darkred 100%);

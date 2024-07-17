@@ -182,11 +182,11 @@
 //   font-style: italic;
 // }
 
-* {
+body {
   font-family: $font-secondary;
   font-size: $font-md-mobile;
   font-weight: 500;
-  @media screen and (min-width: $screen-md) {
+  @include screen-min("md") {
     font-size: $font-md-desktop;
   }
 }
@@ -241,6 +241,7 @@ h4,
   }
   &--xxlarge {
     font-size: $font-xxl-mobile !important;
+    
   }
 }
 

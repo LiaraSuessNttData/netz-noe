@@ -1,63 +1,94 @@
-<section class="content__spacing--end pb-5">
-  <div class="position-relative">
+<div class="content__spacing--end row h-100">
+  <section class="col-md-7 col-lg-8 col-xl-9 d-md-flex flex-column">
     <img
-      class="object-fit-cover image-container__image image-container--xlarge"
+      class="content__spacing--end object-fit-cover image-container__image image-container--xlarge cover__image flex-fill"
       src="assets/images/pic-dummy-1.png"
       alt="Landing-Page Banner"
     />
+
     <div
-      class="content__overlay--absolute left-space-5 right-space-5 bottom-space-n5 p-5 d-flex flex-column justify-content-center gap-3 theme--dark"
+      class="d-none d-md-flex flex-column justify-content-between content__box customer-portal__image"
     >
-      <div class="mb-4">
-        <h1>Wir bauen Energie-Zukunft</h1>
-        <span class="sub-header">Ich brauche Strom oder Gas</span>
+      <div class="mb-6">
+        <h2>Das neue Netz N&Ouml;-Kundenportal</h2>
+        <span class="sub-header">
+          Jetzt gratis für das neue Netz N&Ouml;-Kundenportal registrieren und
+          alle Vorteile genie&szlig;en.
+        </span>
       </div>
-      <input class="txt-input" type="text" placeholder="Adresse eingeben..." />
-      <button class="btn btn-primary w-100">
-        Verf&uuml;gbarkeit pr&uuml;fen <i class="bi bi-arrow-right"></i>
+      <button class="btn btn-primary btn-fit">
+        Jetzt registrieren <i class="bi bi-arrow-right"></i>
       </button>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="content__spacing--end">
-  <div class="content__box content__spacing--end theme--gray">
-    <div class="mb-6">
-      <h3>Z&auml;hlerstand</h3>
-      <p>
-        Geben Sie den Z&auml;hlerstand für Ihre analogen Stromz&auml;hler und
-        Ihre Gasz&auml;hler bekannt.
-      </p>
-    </div>
-    <button class="btn btn-primary w-100">
-      Z&auml;hlerstand bekanntgeben <i class="bi bi-arrow-right"></i>
-    </button>
-  </div>
+  <section class="availability col-md-5 col-lg-4 col-xl-3 order-md-first">
+    <div>
+      <div class="grid row-gap-6">
+        <div class="d-none d-md-block g-col-12 order-md-0">
+          <h4>Schnellzugriffe</h4>
+          <p>Die wichtigsten Funktionen schnell erreichbar.</p>
+        </div>
 
-  <div class="content__box content__spacing--end theme--gray">
-    <div class="mb-6">
-      <h3>St&ouml;rungen</h3>
-      <p>
-        Alle aktuellen und geplanten St&ouml;rungen und Wartungsarbeiten für
-        Strom und Gas.
-      </p>
-    </div>
-    <button class="btn btn-primary w-100">
-      St&ouml;rungen anzeigen <i class="bi bi-arrow-right"></i>
-    </button>
-  </div>
+        <div
+          class="content__overlay mt-n12 ms-5 me-5 p-5 d-flex flex-column justify-content-center gap-3 theme--dark g-col-12 order-md-2 availability"
+        >
+          <div class="mb-4">
+            <h1>Wir bauen Energie-Zukunft</h1>
+            <span class="sub-header">Ich brauche Strom oder Gas</span>
+          </div>
+          <input
+            class="txt-input"
+            type="text"
+            placeholder="Adresse eingeben..."
+          />
+          <button class="btn btn-primary w-100">
+            Verf&uuml;gbarkeit pr&uuml;fen <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
 
-  <div class="content__box content__box--success content__spacing--end">
-    <div class="row">
-      <div class="col-3">
-        <i class="bi bi-check-circle content__status-icon"></i>
+        <div class="content__box theme--gray g-col-12 order-md-3">
+          <div class="mb-6">
+            <h3>Z&auml;hlerstand</h3>
+            <p>
+              Geben Sie den Z&auml;hlerstand für Ihre analogen Stromz&auml;hler
+              und Ihre Gasz&auml;hler bekannt.
+            </p>
+          </div>
+          <button class="btn btn-primary w-100">
+            Z&auml;hlerstand bekanntgeben <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+
+        <div class="content__box theme--gray g-col-12 order-md-4">
+          <div class="mb-6">
+            <h3>St&ouml;rungen</h3>
+            <p>
+              Alle aktuellen und geplanten St&ouml;rungen und Wartungsarbeiten
+              für Strom und Gas.
+            </p>
+          </div>
+          <button class="btn btn-primary w-100">
+            St&ouml;rungen anzeigen <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+
+        <div class="content__box content__box--success g-col-12 order-md-1">
+          <div class="row">
+            <div class="g-col-3">
+              <i class="bi bi-check-circle content__status-icon"></i>
+            </div>
+            <div class="g-col-9">
+              Momentan keine St&ouml;rung im Netz bekannt.
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-9">Momentan keine St&ouml;rung im Netz bekannt.</div>
     </div>
-  </div>
-</section>
+  </section>
+</div>
 
-<section class="content__spacing--end">
+<section class="d-block d-md-none content__spacing--end">
   <div class="content__box customer-portal__image">
     <div class="mb-6">
       <h2>Das neue Netz N&Ouml;-Kundenportal</h2>
@@ -67,44 +98,44 @@
       </span>
     </div>
     <button class="btn btn-primary w-100">
-      St&ouml;rungen anzeigen <i class="bi bi-arrow-right"></i>
+      Jetzt registrieren <i class="bi bi-arrow-right"></i>
     </button>
   </div>
 </section>
 
-<section class="content__spacing--end">
-  <h2>This is the best headline ever</h2>
+<section class="content__spacing--end col-md-9">
+  <h2>Das Netz Niederösterreich</h2>
   <img
-    class="object-fit-cover image-container__image image-container--small"
+    class="object-fit-cover image-container__image image-container--small achievement__image"
     src="assets/images/pic-dummy-3.png"
     alt="Erfolge"
   />
-  <div class="content__overlay mt-n9 mx-5">
-    <div class="grid achievement__grid">
+  <div class="content__overlay achievement__grid-container">
+    <div class="grid achievement__grid mt-n9 mx-5">
       <div
-        class="g-col-6 d-flex flex-column justify-content-end content__box--small achievement bg-color--contrast-mustard"
+        class="g-col-6 d-flex flex-column justify-content-between content__box--small achievement bg-color--accent-khaki"
       >
-        <h4>700.000</h4>
+        <h4 class="achievement__metric">700.000</h4>
         <p class="achievement__text">
           Haushalte und 1,4 Mio. Menschen vertrauen auf uns
         </p>
       </div>
       <div
-        class="g-col-6 d-flex flex-column justify-content-end content__box--small achievement bg-color--contrast-bluegray"
+        class="g-col-6 d-flex flex-column justify-content-between content__box--small achievement bg-color--accent-darkblue"
       >
-        <h4>83.945 km</h4>
+        <h4 class="achievement__metric">83.945 km</h4>
         <p class="achievement__text">verlegte Stromkabel</p>
       </div>
       <div
-        class="g-col-6 d-flex flex-column justify-content-end content__box--small achievement bg-color--contrast-peach"
+        class="g-col-6 d-flex flex-column justify-content-between content__box--small achievement bg-color--base-black"
       >
-        <h4>6.045 km</h4>
+        <h4 class="achievement__metric">6.045 km</h4>
         <p class="achievement__text">verlegte Gasleitungen</p>
       </div>
       <div
-        class="g-col-6 d-flex flex-column justify-content-end content__box--small achievement bg-color--contrast-clay"
+        class="g-col-6 d-flex flex-column justify-content-between content__box--small achievement bg-color--accent-purple"
       >
-        <h4>98%</h4>
+        <h4 class="achievement__metric">98%</h4>
         <p class="achievement__text">
           Erzeugung aus nachhaltigen Quellen im August 2023
         </p>

@@ -6,6 +6,9 @@
   padding: 12px 24px;
   box-sizing: border-box;
   font-weight: bold;
+  &.btn-fit {
+    width: fit-content;
+  }
 }
 
 .txt-input {
