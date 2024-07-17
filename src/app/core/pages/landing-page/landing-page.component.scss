@@ -40,6 +40,11 @@ $img-height-small-mobile: 220px;
   $achv-grid-top-spacing: 112px;
   box-sizing: content-box;
   color: $base-white;
+  &__header {
+    @include screen-min("md") {
+      font-size: $font-xxxl;
+    }
+  }
   &__image {
     @include screen-min("md") {
       height: $achv-height;
@@ -69,7 +74,7 @@ $img-height-small-mobile: 220px;
   }
   &__text {
     margin: 0;
-    font-size: $font-sm-mobile;
+    font-size: $font-sm;
   }
 }
 

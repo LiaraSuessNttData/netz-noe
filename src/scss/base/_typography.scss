@@ -185,10 +185,10 @@
 
 body {
   font-family: $font-secondary;
-  font-size: $font-md-mobile;
+  font-size: $font-md;
   font-weight: 500;
   @include screen-min("md") {
-    font-size: $font-md-desktop;
+    font-size: $font-md;
   }
 }
 
@@ -199,7 +199,7 @@ h1,
   font-weight: bold;
   @include screen-min("md") {
     font-size: $font-h1-desktop;
-    font-weight: bold;
+    font-weight: 500;
   }
 }
 
@@ -210,7 +210,7 @@ h2,
   font-weight: bold;
   @include screen-min("md") {
     font-size: $font-h2-desktop;
-    font-weight: bold;
+    font-weight: 500;
   }
 }
 
@@ -232,32 +232,41 @@ h4,
   font-weight: bold;
   @include screen-min("md") {
     font-size: $font-h4-desktop;
-    font-weight: bold;
-  }
+    font-weight: 500;
+  } 
 }
 
 .sub-header {
-  font-size: $font-hsub-mobile;
+  font-size: $font-hsub;
 }
 
 .text {
   &--xsmall {
-    font-size: $font-xs-mobile !important;
+    font-size: $font-xs !important;
   }
   &--small {
-    font-size: $font-sm-mobile !important;
+    font-size: $font-sm !important;
   }
   &--medium {
-    font-size: $font-md-mobile !important;
+    font-size: $font-md !important;
   }
   &--large {
-    font-size: $font-lg-mobile !important;
+    font-size: $font-lg !important;
   }
   &--xlarge {
-    font-size: $font-xl-mobile !important;
+    font-size: $font-xl !important;
   }
   &--xxlarge {
-    font-size: $font-xxl-mobile !important;
+    font-size: $font-xxl !important;
+  }
+  &--xxxlarge {
+    font-size: $font-xxxl !important;
+  }
+  &--huge {
+    font-size: $font-huge !important;
+  }
+  &--xhuge {
+    font-size: $font-xhuge !important;
   }
   &--error {
     color: $base-red !important;

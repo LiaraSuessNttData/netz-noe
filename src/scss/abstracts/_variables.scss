@@ -69,31 +69,41 @@ $gradient-red-darkred: linear-gradient(90deg, $base-red 0%, $misc-darkred 100%);
 $font-primary: "Martina Plantijn", Arial, sans-serif;
 $font-secondary: "Frutiger Next LT", Arial, sans-serif;
 
-$font-xs-mobile: 12px;
-$font-xs-desktop: 12px;
-$font-sm-mobile: 14px;
-$font-sm-desktop: 14px;
-$font-md-mobile: 16px;
-$font-md-desktop: 18px;
-$font-lg-mobile: 20px;
-$font-lg-desktop: 28px;
-$font-xl-mobile: 24px;
-$font-xl-desktop: 30px;
-$font-xxl-mobile: 32px;
-$font-xxl-desktop: 56px;
+// $font-xs-mobile: 12px;
+// $font-xs-desktop: 12px;
+// $font-sm-mobile: 14px;
+// $font-sm-desktop: 14px;
+// $font-md-mobile: 16px;
+// $font-md-desktop: 18px;
+// $font-lg-mobile: 20px;
+// $font-lg-desktop: 28px;
+// $font-xl-mobile: 24px;
+// $font-xl-desktop: 30px;
+// $font-xxl-mobile: 32px;
+// $font-xxl-desktop: 56px;
 
-$font-h1-mobile: 32px;
-$font-h1-desktop: 56px;
-$font-h2-mobile: 32px;
-$font-h2-desktop: 56px;
-$font-h3-mobile: 24px;
-$font-h3-desktop: 30px;
-$font-h4-mobile: 28px;
-$font-h4-desktop: 40px;
+$font-xs: 12px;
+$font-sm: 14px;
+$font-md: 16px;
+$font-lg: 20px;
+$font-xl: 24px;
+$font-xxl: 28px;
+$font-xxxl: 32px;
+$font-huge: 40px;
+$font-xhuge: 56px;
 
-$font-hsub-mobile: 20px;
+$font-h1-mobile: $font-xxxl;
+$font-h1-desktop: $font-xhuge;
+$font-h2-mobile: $font-xxxl;
+$font-h2-desktop: $font-xhuge;
+$font-h3-mobile: $font-xl;
+$font-h3-desktop: $font-xxl;
+$font-h4-mobile: $font-xxl;
+$font-h4-desktop: $font-huge;
+ 
+$font-hsub: $font-lg;
 
-$font-nav-link: 20px;
+$font-nav-link: $font-lg;
 
 $icon-sm: 32px;
 $icon-md: 48px;
