@@ -1,16 +1,56 @@
 @import "abstracts/variables";
+@import "abstracts/mixins";
 
-.company-logo {
-  height: 48px;
-}
+.nav-main {
+  font-size: $font-nav-link;
+  // background-color: $base-darkgray;
+  // box-shadow: 0 0 0 100vmax $base-darkgray;
+  // clip-path: inset(0 -100vmax);
+  // @include screen-min("md") {
+  //   background-color: $base-white;
+  //   box-shadow: none;
+  // }
 
-.nav-list {
-  &__btn-burger {
-    text-decoration: none;
-
+  .company-logo {
+    height: 48px;
+    @include screen-min("md") {
+      height: 80px;
+    }
+    // &__tag {
+    //   background-color: $base-white;
+    // }
   }
-  &__btn-icon {
-    font-size: $icon-md;
-    line-height: 1;
+
+  .nav-link {
+    padding: 0;
+    color: $base-black;
+    // color: $base-white;
+    // @include screen-min("md") {
+    //   color: $base-black;
+    // }
+  }
+
+  .nav-list {
+    &__btn-burger {
+      text-decoration: none;
+      border: none;
+    }
+    &__btn-icon {
+      font-size: $icon-md;
+      line-height: 1;
+    }
+  }
+
+  &__actions {
+    min-width: fit-content;
+  }
+
+  .search {
+    border: 1px solid $base-black;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

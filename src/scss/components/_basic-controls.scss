@@ -9,6 +9,19 @@
   &.btn-fit {
     width: fit-content;
   }
+  &.btn-important {
+    border: none !important;
+    background: $gradient-red-darkred !important ;
+    color: $base-white !important;
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited {
+      border: none !important;
+      background: $gradient-red-darkred !important;
+      color: $base-white !important;
+    }
+  }
 }
 
 .txt-input {

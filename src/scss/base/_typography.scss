@@ -1,4 +1,5 @@
 @import "abstracts/variables";
+@import "abstracts/mixins";
 
 // font-weight map
 /*
@@ -196,6 +197,10 @@ h1,
   font-family: $font-primary;
   font-size: $font-h1-mobile;
   font-weight: bold;
+  @include screen-min("md") {
+    font-size: $font-h1-desktop;
+    font-weight: bold;
+  }
 }
 
 h2,
@@ -203,6 +208,10 @@ h2,
   font-family: $font-primary;
   font-size: $font-h2-mobile;
   font-weight: bold;
+  @include screen-min("md") {
+    font-size: $font-h2-desktop;
+    font-weight: bold;
+  }
 }
 
 h3,
@@ -210,6 +219,10 @@ h3,
   font-family: $font-primary;
   font-size: $font-h3-mobile;
   font-weight: 500;
+  @include screen-min("md") {
+    font-size: $font-h3-desktop;
+    font-weight: 500;
+  }
 }
 
 h4,
@@ -217,6 +230,10 @@ h4,
   font-family: $font-primary;
   font-size: $font-h4-mobile;
   font-weight: bold;
+  @include screen-min("md") {
+    font-size: $font-h4-desktop;
+    font-weight: bold;
+  }
 }
 
 .sub-header {
@@ -241,7 +258,9 @@ h4,
   }
   &--xxlarge {
     font-size: $font-xxl-mobile !important;
-    
+  }
+  &--error {
+    color: $base-red !important;
   }
 }
 

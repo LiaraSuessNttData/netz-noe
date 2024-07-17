@@ -1,10 +1,62 @@
 <div class="content__spacing--end row h-100">
   <section class="col-md-7 col-lg-8 col-xl-9 d-md-flex flex-column">
-    <img
-      class="content__spacing--end object-fit-cover image-container__image image-container--xlarge cover__image flex-fill"
-      src="assets/images/pic-dummy-banner-1.png"
-      alt="Landing-Page Banner"
-    />
+    <div
+      id="carouselCover"
+      class="carousel slide content__spacing--end image-container--xlarge flex-fill"
+    >
+      <div class="carousel-inner h-100">
+        <div class="carousel-item position-relative h-100 active">
+          <img
+            src="assets/images/pic-dummy-banner-1.png"
+            class="d-block w-100 object-fit-cover h-100 image-container__image"
+            alt="Cover"
+          />
+          <h1 class="position-absolute top-space-5 left-space-5">
+            Wir bauen<br />Energie-Zukunft
+          </h1>
+        </div>
+        <div class="carousel-item position-relative h-100">
+          <img
+            src="assets/images/pic-dummy-banner-2.png"
+            class="d-block w-100 object-fit-cover h-100 image-container__image"
+            alt="Planauskunft"
+          />
+          <div class="position-absolute top-space-5 left-space-5">
+            <h2>Kostenlose Planauskunft</h2>
+            <span class="sub-header">
+              Jetzt gratis für das neue Netz N&Ouml;-Kundenportal registrieren
+              und alle Vorteile genie&szlig;en.
+            </span>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselCover"
+          data-bs-slide="prev"
+        >
+          <span aria-hidden="true"
+            ><i
+              class="bi bi-arrow-left rounded-pill p-4 bg-color--base-white cover__controls"
+            ></i
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselCover"
+          data-bs-slide="next"
+        >
+          <span aria-hidden="true"
+            ><i
+              class="bi bi-arrow-right rounded-pill p-4 bg-color--base-white cover__controls"
+            ></i
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
 
     <div
       class="d-none d-md-flex flex-column justify-content-between content__box customer-portal__image"
@@ -34,8 +86,7 @@
           class="content__overlay mt-n12 ms-5 me-5 p-5 d-flex flex-column justify-content-center gap-3 theme--dark g-col-12 order-md-2 availability"
         >
           <div class="mb-4">
-            <h1>Wir bauen Energie-Zukunft</h1>
-            <span class="sub-header">Ich brauche Strom oder Gas</span>
+            <h3>Ich brauche Strom oder Gas</h3>
           </div>
           <input
             class="txt-input"
@@ -116,30 +167,30 @@
       <div
         class="g-col-6 d-flex flex-column justify-content-between content__box--small achievement bg-color--accent-khaki"
       >
+        <h4 class="achievement__metric">98%</h4>
+        <p class="achievement__text">
+          Erzeugung aus nachhaltigen Quellen im August 2023
+        </p>
+      </div>
+      <div
+        class="g-col-6 d-flex flex-column justify-content-between content__box--small achievement bg-color--accent-darkblue"
+      >
+        <h4 class="achievement__metric">6.045 km</h4>
+        <p class="achievement__text">verlegte Gasleitungen</p>
+      </div>
+      <div
+        class="g-col-6 d-flex flex-column justify-content-between content__box--small achievement bg-color--base-black"
+      >
         <h4 class="achievement__metric">700.000</h4>
         <p class="achievement__text">
           Haushalte und 1,4 Mio. Menschen vertrauen auf uns
         </p>
       </div>
       <div
-        class="g-col-6 d-flex flex-column justify-content-between content__box--small achievement bg-color--accent-darkblue"
+        class="g-col-6 d-flex flex-column justify-content-between content__box--small achievement bg-color--accent-purple"
       >
         <h4 class="achievement__metric">83.945 km</h4>
         <p class="achievement__text">verlegte Stromkabel</p>
-      </div>
-      <div
-        class="g-col-6 d-flex flex-column justify-content-between content__box--small achievement bg-color--base-black"
-      >
-        <h4 class="achievement__metric">6.045 km</h4>
-        <p class="achievement__text">verlegte Gasleitungen</p>
-      </div>
-      <div
-        class="g-col-6 d-flex flex-column justify-content-between content__box--small achievement bg-color--accent-purple"
-      >
-        <h4 class="achievement__metric">98%</h4>
-        <p class="achievement__text">
-          Erzeugung aus nachhaltigen Quellen im August 2023
-        </p>
       </div>
     </div>
   </div>
@@ -174,7 +225,7 @@
           src="assets/images/pic-dummy-5.png"
           alt="Stromkostenzuschuss 2023"
         />
-        <h3 class="mb-4">Stromkostenzuschuss 2023</h3>
+        <h3 class="mb-4" style="overflow-wrap: break-word;">Stromkostenzuschuss 2023</h3>
         <p class="mb-5">
           Unterst&uuml;tzung im Alltag: So profitieren Sie vom
           Stromkostenzuschuss 2023.

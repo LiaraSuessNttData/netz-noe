@@ -1,4 +1,96 @@
-<nav class="navbar d-flex flex-column mb-4">
+<nav class="navbar navbar-expand-md nav-main py-4 mb-4">
+  <div class="company-logo__tag">
+    <a [routerLink]="['/']"
+      ><img
+        class="company-logo me-5"
+        src="assets/images/netz-noe-logo.svg"
+        alt="Netz NÖ Logo"
+    /></a>
+  </div>
+  <button
+    class="navbar-toggler nav-list__btn-burger"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navMain"
+    aria-controls="navMain"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <i class="nav-list__btn-icon bi bi-list"></i>
+  </button>
+  <div class="w-100 collapse navbar-collapse" id="navMain">
+    <ul class="w-100 navbar-nav justify-content-between row-gap-4 column-gap-6 pt-8 pt-md-0 pb-8 pb-md-0">
+      <div
+        class="d-flex flex-column flex-md-row align-items-end align-items-md-center gap-4 flex-wrap"
+      >
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Strom</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Gas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Energiezukunft</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Wissen</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Links</a>
+        </li>
+        <!-- <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navMainLinksDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Links
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navMainLinksDropdown">
+            <li><a class="dropdown-item" href="#">Link 1</a></li>
+            <li><a class="dropdown-item" href="#">Link 2</a></li>
+            <li><a class="dropdown-item" href="#">Link 3</a></li>
+          </ul>
+        </li> -->
+      </div>
+      <div
+        class="d-flex flex-column flex-md-row align-items-end align-items-md-center gap-4 nav-main__actions"
+      >
+        <li class="nav-item d-none d-md-block">
+          <a class="nav-link search rounded-pill" href="#"
+            ><i class="bi bi-search"></i
+          ></a>
+        </li>
+        <li class="nav-item">
+          <button
+            class="nav-link d-none d-md-block btn btn-important px-5 py-3"
+            [routerLink]="['/', 'netz-service-portal']"
+          >
+            Anmelden <i class="bi bi-arrow-right"></i>
+          </button>
+          <a
+            class="nav-link d-block d-md-none"
+            [routerLink]="['/', 'netz-service-portal']"
+            >Anmelden</a
+          >
+        </li>
+        <li class="nav-item d-none d-md-block">
+          <a class="nav-link d-inline fw-bold" href="#">DE</a>
+          |
+          <a class="nav-link d-inline" href="#">EN</a>
+        </li>
+      </div>
+    </ul>
+  </div>
+</nav>
+
+<!-- <nav class="navbar d-flex flex-column mb-4">
   <div class="w-100 mb-4 d-flex flex-row justify-content-between">
     <a [routerLink]="['/']"
       ><img
@@ -32,5 +124,4 @@
       <li class="nav-item"><a class="nav-link">Anmelden</a></li>
     </ul>
   </div>
-</nav>
-    
+</nav> -->
